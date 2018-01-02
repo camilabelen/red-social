@@ -1,9 +1,11 @@
+
 .catico {
   width: 35px;
   height: 35px;
   padding-bottom:3px;
 }
 
+<<<<<<< HEAD
 .navbar {
   position: relative;
 }
@@ -43,3 +45,47 @@
   border-radius: 50%;
 }
 .navbar-nav li {float:none; display:inline-block; vertical-align:bottom;}
+=======
+.navbar-form .form-control {
+    position: relative;
+}
+
+.navbar-form .form-control:before {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png);
+    background-position: -48px 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+}
+
+/*barra lateral contactos*/
+.contacts{
+	border: 1px solid #CBCBCB;
+	height: 100vh;
+}
+
+.contact{
+	margin-top: 5%;
+}
+
+.name{
+	margin-top: 5%;
+}
+
+.perfilNewPost img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.contacts img{
+	width: 100%;
+	height: 3.2em;
+	border-radius: 50%;
+}
+>>>>>>> e7bf7e34f261929c9f46f1ef76f25be15dc67f05
