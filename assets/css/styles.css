@@ -19,8 +19,6 @@
   padding-top:11px;
 }
 
-.navbar-nav li {float:none; display:inline-block; vertical-align:bottom;}
-
 .navbar-form .form-control {
     position: relative;
 }

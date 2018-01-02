@@ -55,31 +55,74 @@
   <div class="container-fluid">
     <div class="row">
       <!-- publicaciones -->
-      <div class="col-lg-10 news">
-        <div class="row newPost col-lg-10 col-lg-offset-1">
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs perfilNewPost">
-            <img src="assets/img/gato5.jpg" alt="foto_perfil">
+      <div class="col-lg-8 news col-lg-offset-1">
+        <div class="">
+          <div class="col-lg-10 newPost">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/gato5.jpg" alt="">
+              </div>
+              <div class="col-lg-10 textareaNewPost">
+                <div class="form-group">
+                  <textarea class="form-control" rows="1" id="post" placeholder="¿Qué haces hoy?"></textarea>
+                  <button type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-picture"></span> Foto
+                  </button>
+                  <button type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-film "></span> Video
+                  </button>                 
+                </div>                     
+              </div>
+            </div>           
           </div>
-          <div class="col-lg-8 col-md-7 col-sm-7 hidden-xs">
+        </div>        
+        <!-- post -->
+        <div class="">
+          <div class="col-lg-10 post"> 
+            <div class="postAuthor">
+              <div class="col-lg-1 photoProfile">
+                 <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
+              </div>
+              <div class="col-lg-10 name">
+               <h5><strong>Bola de nieve III</strong></h5>
+              </div>            
+            </div>          
+            <img src="assets/img/gato2.jpg" alt="foto_post">
+            <div class="col-lg-12">
+              <span class="glyphicon glyphicon-heart-empty btn-lg"></span>
+              <span class="glyphicon glyphicon-comment btn-lg"></span>
+            </div>
+            <div class="col-lg-12">
+              <p><strong>Bola de nieve III</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
+            </div>          
             <div class="form-group">
-              <textarea class="form-control" rows="1" id="comment" placeholder="¿Cómo estás hoy?"></textarea>
+              <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+            </div>
+          </div>
+          <div class="col-lg-10 post"> 
+            <div class="postAuthor">
+              <div class="col-lg-1 photoProfile">
+                 <img src="assets/img/gato7.jpg" alt="foto_contacto_3">
+              </div>
+              <div class="col-lg-10 name">
+               <h5><strong>Kitty</strong></h5>
+              </div>      
+            </div>           
+            <img src="assets/img/gato4.jpg" alt="foto_post">
+            <div class="col-lg-12">
+              <span class="glyphicon glyphicon-heart-empty btn-lg"></span>
+              <span class="glyphicon glyphicon-comment btn-lg"></span>
+            </div>
+            <div class="col-lg-12">
+              <p><strong>Kitty</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
+            </div>          
+            <hr>
+            <div class="form-group">
+              <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
             </div>
           </div>
         </div>
-        <!-- post -->
-        <div class="col-lg-8 post">
-          <h5>Bola de nieve III</h5>
-          <hr>
-          <img src="assets/img/gato2.jpg" alt="foto_post">
-          <div col-lg-12>
-            
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
-          <hr>
-          <div class="form-group">
-            <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
-          </div>
-        </div>
+       
       </div>
       <div class="col-lg-2 contacts">
         <div class="row">
@@ -91,40 +134,40 @@
           <div class="col-lg-4">
             <img src="assets/img/gato6.jpg" alt="foto_contacto_1">
           </div>
-          <div class="col-lg-8 name">
-            <p>Bola de nieve I</p>
+          <div class="col-lg-8 nameContact">
+            <p>Bigotes</p>
           </div>
         </div>
         <div class="row contact">
           <div class="col-lg-4">
             <img src="assets/img/gato7.jpg" alt="foto_contacto_2">
           </div>
-          <div class="col-lg-8 name">
-            <p>Bola de nieve II</p>
+          <div class="col-lg-8 nameContact">
+            <p>Kitty</p>
           </div>
         </div>
         <div class="row contact">
           <div class="col-lg-4">
             <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
           </div>
-          <div class="col-lg-8 name">
-            <p>Bola de nieve III  </p>
+          <div class="col-lg-8 nameContact">
+            <p>Bola de nieve III</p>
           </div>
         </div>
         <div class="row contact">
           <div class="col-lg-4">
             <img src="assets/img/gato9.jpg" alt="foto_contacto_3">
           </div>
-          <div class="col-lg-8 name">
-            <p>Bola de nieve IV  </p>
+          <div class="col-lg-8 nameContact">
+            <p>Benito</p>
           </div>
         </div>
         <div class="row contact">
           <div class="col-lg-4">
             <img src="assets/img/gato10.jpg" alt="foto_contacto_3">
           </div>
-          <div class="col-lg-8 name">
-            <p>Bola de nieve V  </p>
+          <div class="col-lg-8 nameContact">
+            <p>Minino</p>
           </div>
         </div>
         
