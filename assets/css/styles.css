@@ -5,7 +5,6 @@
   padding-bottom:3px;
 }
 
-<<<<<<< HEAD
 .navbar {
   position: relative;
 }
@@ -20,32 +19,8 @@
   padding-top:11px;
 }
 
-/*barra lateral contactos*/
-.contacts{
-  border: 1px solid #CBCBCB;
-  height: 100vh;
-}
-
-.contact{
-  margin-top: 5%;
-}
-
-.name{
-  margin-top: 5%;
-}
-
-.perfilNewPost img{
-  width: 100%;
-  border-radius: 50%;
-}
-
-.contacts img{
-  width: 100%;
-  height: 3.2em;
-  border-radius: 50%;
-}
 .navbar-nav li {float:none; display:inline-block; vertical-align:bottom;}
-=======
+
 .navbar-form .form-control {
     position: relative;
 }
@@ -67,14 +42,17 @@
 /*barra lateral contactos*/
 .contacts{
 	border: 1px solid #CBCBCB;
-	height: 100vh;
+	height: auto;
+  margin-top: 1.5%;
+  border-radius: 0.5em;
 }
 
 .contact{
 	margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.name{
+.nameContact{
 	margin-top: 5%;
 }
 
@@ -87,5 +65,65 @@
 	width: 100%;
 	height: 3.2em;
 	border-radius: 50%;
+
 }
->>>>>>> e7bf7e34f261929c9f46f1ef76f25be15dc67f05
+
+/*Post Nuevo*/
+.newPost{
+  border: 1px solid #CBCBCB;
+  padding: 2em;
+  margin-top: 3%;
+  margin-bottom: 4%;
+  border-radius: 0.5em;
+}
+
+.newPost img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.textareaNewPost{
+  padding: 0;
+}
+
+.textareaNewPost button{
+  margin-top: 1%;
+}
+
+.imgUser{
+  padding: 0;
+}
+
+/*seccion publicaciones*/
+
+#comment{
+	margin-top: 1%;
+  border: none;
+}
+
+.post{
+	border: 1px solid #CBCBCB;
+	border-radius: 0.5em;
+  margin-bottom: 5%;
+}
+
+.post img{
+	width: 100%;
+  border-radius: 0.5em;	
+}
+
+.postAuthor img{
+  width: 80%;
+  border-radius: 50%;
+  margin-top: 20%; 
+  margin-bottom: 20%;
+}
+
+.photoProfile{  
+  padding: 0;
+}
+
+.name{
+  padding: 0;
+  margin-top: 2%;
+}
