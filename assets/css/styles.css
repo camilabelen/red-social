@@ -1,0 +1,23 @@
+.catico {
+  width: 30px;
+  height: 30px;
+}
+
+
+.navbar-form .form-control {
+    position: relative;
+}
+
+.navbar-form .form-control:before {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png);
+    background-position: -48px 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+}
