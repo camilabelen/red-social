@@ -88,4 +88,20 @@
 	height: 3.2em;
 	border-radius: 50%;
 }
->>>>>>> e7bf7e34f261929c9f46f1ef76f25be15dc67f05
+
+/*seccion publicaciones*/
+
+#comment{
+	margin-top: 1%;
+}
+
+.post{
+	border: 1px solid #CBCBCB;
+	border-radius: 0.5em;
+}
+
+.post img{
+	width: 100%;
+	object-fit: fill;
+}
+
