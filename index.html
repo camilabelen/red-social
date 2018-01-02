@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/img/catico.png">
+   <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.2/web-fonts-with-css/css/fontawesome-all.min.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid col-md-offset-1 col-md-10">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -43,21 +44,82 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><i class="fas fa-camera-retro"></i></li>
+        <li><i class="fas fa-heart"></i></li>
+        <li><i class="fas fa-paw"></i></li>
+      </ul>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-10 news">
+        <div class="row newPost">
+          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs perfilNewPost">
+            <img src="assets/img/gato5.jpg" alt="foto_perfil">
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-7 hidden-xs">
+            <div class="form-group">
+              <textarea class="form-control" rows="1" id="comment" placeholder="¿Cómo estás hoy?"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 contacts">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Contactos</h4>
+          </div>          
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato6.jpg" alt="foto_contacto_1">
+          </div>
+          <div class="col-lg-8 name">
+            <p>Bola de nieve I</p>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato7.jpg" alt="foto_contacto_2">
+          </div>
+          <div class="col-lg-8 name">
+            <p>Bola de nieve II</p>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
+          </div>
+          <div class="col-lg-8 name">
+            <p>Bola de nieve III  </p>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato9.jpg" alt="foto_contacto_3">
+          </div>
+          <div class="col-lg-8 name">
+            <p>Bola de nieve IV  </p>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato10.jpg" alt="foto_contacto_3">
+          </div>
+          <div class="col-lg-8 name">
+            <p>Bola de nieve V  </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</section>
   
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
