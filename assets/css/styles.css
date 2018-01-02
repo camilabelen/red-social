@@ -19,22 +19,8 @@
   padding-top:11px;
 }
 
-.navbar-form .form-control {
-    position: relative;
-}
-
-.navbar-form .form-control:before {
-    content:'';
-    display: block;
-    width: 14px;
-    height: 14px;
-    background-image: url(http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png);
-    background-position: -48px 0;
-    position: absolute;
-    top:8px;
-    left:8px;
-    opacity: .5;
-    z-index: 1000;
+.searchico {
+  font-size: 20px;
 }
 
 /*barra lateral contactos*/
@@ -46,23 +32,23 @@
 }
 
 .contact{
-	margin-top: 5%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
 .nameContact{
-	margin-top: 5%;
+  margin-top: 5%;
 }
 
 .perfilNewPost img{
-	width: 100%;
-	border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .contacts img{
-	width: 100%;
-	height: 3.2em;
-	border-radius: 50%;
+  width: 100%;
+  height: 3.2em;
+  border-radius: 50%;
 
 }
 
@@ -95,29 +81,29 @@
 /*seccion publicaciones*/
 
 #comment{
-	margin-top: 1%;
+  margin-top: 1%;
   border: none;
 }
 
 .post{
-	border: 1px solid #CBCBCB;
-	border-radius: 0.5em;
+  border: 1px solid #CBCBCB;
+  border-radius: 0.5em;
   margin-bottom: 5%;
 }
 
 .post img{
-	width: 100%;
-  border-radius: 0.5em;	
+  width: 100%;
+  border-radius: 0.5em;
 }
 
 .postAuthor img{
   width: 80%;
   border-radius: 50%;
-  margin-top: 20%; 
+  margin-top: 20%;
   margin-bottom: 20%;
 }
 
-.photoProfile{  
+.photoProfile{
   padding: 0;
 }
 
