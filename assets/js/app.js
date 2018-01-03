@@ -121,13 +121,6 @@ user.sendEmailVerification().then(function() {
 }
 
 //modal para subir archivos
- $('#modal1').modal(options){
-    showPreview: false,
-    showUpload: false,
-    elErrorContainer: '#kartik-file-errors',
-    allowedFileExtensions: ["jpg", "png", "gif"]
-    //uploadUrl: '/site/file-upload-single'
-  };
 
 });
 

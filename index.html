@@ -48,7 +48,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <button id="sendd" class="send btn btn-lg btn-primary btn-block">Regístrate</button>
+                      <button id="sendd" class="send btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#mailsendmodal">Regístrate</button>
                     </div>
                   </div>
                 </div>
@@ -115,24 +115,7 @@
   </div>
 </div>
    <!-- modal login end -->
-  <!-- logintext ini -->
 
-  <h4>Registro de usuario</h4>
-  <input id="email" type="email" placeholder="ingresa email">
-  <input id="contrasena" type="password" placeholder="ingresa contraseña">
-  <button class="send" id="sendd">enviar</button>
-
-  <h4>Ingreso de usuarios</h4>
-    <input id="email2" type="email" placeholder="ingresa email">
-  <input id="contrasena2" type="password" placeholder="ingresa contraseña">
-  <button class="loginbtn">acceder</button>
-
-  <div id="contenido">
-    
-  
-  </div>
-
-  <!-- logintest fin -->
 <!-- contenedor login -->
   <div class="login">
     <div class="col-lg-offset-3 col-xs-12 col-lg-6">
@@ -149,13 +132,7 @@
   </div>
 <div class="pageini">
   <!-- inicio navbar -->
-    </div>
-  </div>
-  <!-- fin contenedor login -->
-  </div>
-<div class="pageini">
-  <!-- inicio navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <div class="container-fluid col-md-offset-1 col-md-10">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -181,232 +158,158 @@
             </div>
         </div>
       </form>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right href="#"">
         <li><i class="fas fa-camera-retro"></i></li>
         <li><i class="fas fa-heart"></i></li>
-        <li><i class="fas fa-paw"></i></li>
+      <li class="dropdown">
+        <i class="fas fa-paw dropdown-toggle" data-toggle="dropdown" href="#""></i>
+        <ul class="dropdown-menu">
+          <li><a href="#">Editar Perfil</a></li>
+          <li><a href="#" class="logout">Cerrar Sesión</a></li>
+        </ul>
+      </li>
       </ul>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <!-- fin navbar -->
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- publicaciones -->
-        <div class="col-lg-8 news col-lg-offset-1">
-          <div class="">
-            <div class="col-lg-10 col-md-10 col-sm-10 col-sm-offset-1 newPost hidden-xs">
-              <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2">
-                  <img src="assets/img/gato5.jpg" alt="">
-                </div>
-                <div class="col-lg-10 col-md-10 col-sm-10 textareaNewPost">
-                  <div class="form-group">
-                    <textarea class="form-control" rows="1" id="post" placeholder="¿Qué haces hoy?"></textarea>
-                    <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modal1">
-                      <span class="glyphicon glyphicon-picture"></span> Foto
-                    </button>
-                    <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modal1">
-                      <span class="glyphicon glyphicon-film "></span> Video
-                    </button>
-                    <button type="button" class="btn btn-default btn-md publish" data-toggle="modal" data-target="#modal1">Publicar
-                    </button>
-                    
-                  </div>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- publicaciones -->
+      <div class="col-lg-8 news col-lg-offset-1">
+        <div class="">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-sm-offset-1 newPost hidden-xs">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <img src="assets/img/gato5.jpg" alt="">
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-10 textareaNewPost">
+                <div class="form-group">
+                  <textarea class="form-control" rows="1" id="post" placeholder="¿Qué haces hoy?"></textarea>
+                  <button type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-picture"></span> Foto
+                  </button>
+                  <button type="button" class="btn btn-default btn-md">
+                    <span class="glyphicon glyphicon-film "></span> Video
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- post -->
-          <div class="">
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">
-              <div class="postAuthor">
-                <div class="col-lg-1 col-xs-2 photoProfile">
-                   <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
-                </div>
-                <div class="col-lg-10 name">
-                 <h5><strong>Bola de nieve III</strong></h5>
-                </div>
+        </div>
+        <!-- post -->
+        <div class="">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">
+            <div class="postAuthor">
+              <div class="col-lg-1 col-xs-2 photoProfile">
+                 <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
               </div>
-              <img src="assets/img/gato2.jpg" alt="foto_post">
-              <div class="col-lg-12">
-                <span class="glyphicon glyphicon-heart-empty like"></span>
-              </div>
-              <div class="col-lg-12">
-                <p><strong>Bola de nieve III</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
-              </div>
-            </div> 
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post"> 
-              <div class="postAuthor">
-                <div class="col-lg-1 col-xs-2 photoProfile">
-                   <img src="assets/img/gato7.jpg" alt="foto_contacto_3">
-                </div>
-                <div class="col-lg-10 name">
-                 <h5><strong>Kitty</strong></h5>
-                </div>
-              </div>
-              <img src="assets/img/gato4.jpg" alt="foto_post">
-              <div class="col-lg-12">
-                <span class="glyphicon glyphicon-heart-empty like"></span>
-              </div>
-              <div class="col-lg-12">
-                <p><strong>Kitty</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
-              </div>
-              <hr>
-              <div class="form-group">
-                <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+              <div class="col-lg-10 name">
+               <h5><strong>Bola de nieve III</strong></h5>
               </div>
             </div>
-          </div>       
-        </div>
-        <!-- inicio contactos -->
-        <div class="col-lg-2 contacts hidden-xs hidden-sm">
-          <div class="row">
+            <img src="assets/img/gato2.jpg" alt="foto_post">
             <div class="col-lg-12">
-              <h4>Contactos</h4>
+              <span class="glyphicon glyphicon-heart-empty like"></span>
+            </div>
+            <div class="col-lg-12">
+              <p><strong>Bola de nieve III</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
             </div>
           </div>
-          <hr>
-          <div class="row contact">
-            <div class="col-lg-4">
-              <img src="assets/img/gato6.jpg" alt="foto_contacto_1">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post"> 
+            <div class="postAuthor">
+              <div class="col-lg-1 col-xs-2 photoProfile">
+                 <img src="assets/img/gato7.jpg" alt="foto_contacto_3">
+              </div>
+              <div class="col-lg-10 name">
+               <h5><strong>Kitty</strong></h5>
+              </div>
             </div>
-            <div class="col-lg-8 nameContact">
-              <p>Bigotes</p>
+            <img src="assets/img/gato4.jpg" alt="foto_post">
+            <div class="col-lg-12">
+              <span class="glyphicon glyphicon-heart-empty like"></span>
             </div>
-          </div>
-          <div class="row contact">
-            <div class="col-lg-4">
-              <img src="assets/img/gato7.jpg" alt="foto_contacto_2">
+            <div class="col-lg-12">
+              <p><strong>Kitty</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
             </div>
-            <div class="col-lg-8 nameContact">
-              <p>Kitty</p>
-            </div>
-          </div>
-          <div class="row contact">
-            <div class="col-lg-4">
-              <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
-            </div>
-            <div class="col-lg-8 nameContact">
-              <p>Bola de nieve III</p>
+            <hr>
+            <div class="form-group">
+              <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
             </div>
           </div>
-          <div class="row contact">
-            <div class="col-lg-4">
-              <img src="assets/img/gato9.jpg" alt="foto_contacto_3">
-            </div>
-            <div class="col-lg-8 nameContact">
-              <p>Benito</p>
-            </div>
-          </div>
-          <div class="row contact">
-            <div class="col-lg-4">
-              <img src="assets/img/gato10.jpg" alt="foto_contacto_3">
-            </div>
-            <div class="col-lg-8 nameContact">
-              <p>Minino</p>
-            </div>
-          </div>          
-        </div>
-        <!-- fin contactos -->
+        </div>       
       </div>
-    </div>
-  </section>
-  <!-- Menu fijo inferior version mobile-->
-  <nav class="navbar navbar-default hidden-lg hidden-md navbar-fixed-bottom">
-    <div class="container">
-      <div class="nav navbar-nav menuBottom">
-        <ul class="nav nav-tabs">
-          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li role=""><a href="#"><span class="glyphicon glyphicon-camera"></span></a></li>
-          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
-          <!-- <li role="presentation" class="friends"><a href="#"><img src="assets/img/icon_cat-01.png" alt=""></a></li> -->
-        </ul>
-      </div>
-    </div><!-- /.container-fluid -->
-  </nav>
-  <!-- modal para subir foto -->
-  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="file-loading">
-            <input id="input-b9" name="input-b9[]" multiple type="file"'>
+      <div class="col-lg-2 contacts hidden-xs hidden-sm">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Contactos</h4>
           </div>
-          <div id="kartik-file-errors"></div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" title="Your custom upload logic">Save</button>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato6.jpg" alt="foto_contacto_1">
+          </div>
+          <div class="col-lg-8 nameContact">
+            <p>Bigotes</p>
+          </div>
         </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato7.jpg" alt="foto_contacto_2">
+          </div>
+          <div class="col-lg-8 nameContact">
+            <p>Kitty</p>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
+          </div>
+          <div class="col-lg-8 nameContact">
+            <p>Bola de nieve III</p>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato9.jpg" alt="foto_contacto_3">
+          </div>
+          <div class="col-lg-8 nameContact">
+            <p>Benito</p>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-lg-4">
+            <img src="assets/img/gato10.jpg" alt="foto_contacto_3">
+          </div>
+          <div class="col-lg-8 nameContact">
+            <p>Minino</p>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
-  <!--inicio vista perfil -->
-  <section id="profile">
-    <div class="container-fluid profile">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 backgroundImg">  
-          <div class="col-lg-4 col-lg-offset-4 col-md-4 col-sm-3 col-xs-6 profilePicture">
-            <img src="assets/img/gato5.jpg" alt="">
-          </div>        
-        </div>         
-      </div> 
-      <!-- inicio descripcion perfil usuario -->
-        <div class="row  description">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="col-lg-2 col-xs-4 col-lg-offset-3 text-center">
-            <a href="#">4<br>Publicaciones</a>
-            </div>
-            <div class="col-lg-2 col-xs-4 text-center">
-              <a href="#">100<br>Seguidores</a>
-            </div>
-            <div class="col-lg-2 col-xs-4 text-center">
-              <a href="#">163<br>Seguidos</a>
-            </div>
-          </div>
-        </div>          
-        <div class="col-lg-8 col-lg-offset-2">
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-xs-12">
-            <p><strong>Pelusa</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem temporibus ut aperiam harum, earum ipsam perferendis animi labore, dolore provident sint, necessitatibus maxime quasi blanditiis repudiandae aliquid fugiat neque excepturi?</p>
-          </div>          
-        </div>
-        <!-- fin descripcion -->
-        <div class="col-lg-8 col-lg-offset-2">
-          <hr>
-        </div>
-        <!-- inicio fotos publicadas -->
-        <div class="row publication">        
-          <div class="col-lg-2 col-lg-offset-2 col-xs-6">
-            <img src="assets/img/fondogatos3.jpg" alt="">            
-          </div>
-          <div class="col-lg-2 col-xs-6">
-            <img src="assets/img/gato4.jpg" alt="">   
-          </div>         
-          <div class="col-lg-2 col-xs-6">
-            <img src="assets/img/eb4dc4485838d919063b51c4cc15bba4.jpg" alt="">
-          </div>
-          <div class="col-lg-2 col-xs-6">
-            <img src="assets/img/fondogatos1.jpg" alt="">
-          </div>
-        </div>
-        <!-- fin fotos publicadas -->      
+</section>
+  <!-- Menu fijo inferior version mobile-->
+<nav class="navbar navbar-default navbar-fixed-bottom hidden-lg hidden-md">
+  <div class="container">
+    <div class="nav navbar-nav menuBottom">
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li role=""><a href="#"><span class="glyphicon glyphicon-camera"></span></a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+
+      </ul>
     </div>
-  </section>
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
   <!-- scripts -->
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/app.js"></script>
