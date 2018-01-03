@@ -49,10 +49,8 @@ body, html {
   width:50vh;
   margin-top:10px;
 }
-
-
-
 /*login page fin*/
+/*menu*/
 .catico {
   width: 35px;
   height: 35px;
@@ -75,6 +73,15 @@ body, html {
 
 .searchico {
   font-size: 20px;
+}
+
+.navbar-nav .user a{
+  padding-top: 0;
+  margin-top: 3%;
+}
+
+.user img{
+  width: 12%;
 }
 
 /*barra lateral contactos*/
@@ -171,7 +178,6 @@ body, html {
 }
 
 /*menu responsive inferior*/
-
 .menuBottom span{
   font-size: 1.5em;
 }
@@ -184,9 +190,53 @@ body, html {
   margin-left: 3%;
 }
 
+.friends img{
+  width: 12%;
+}
+
+/*foto portada*/
+.backgroundImg{
+  background-image: url(../img/fondogatos2.jpg);
+  background-size: cover;
+  background-position: 0 45%;
+  background-repeat: no-repeat;
+  height: 30em;
+}
+
+.profilePicture img{
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 30%;
+  height: 30em;
+}
+
+.description{
+  margin-top: 12%;
+}
+
+.publication img{
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/*media queries*/
 @media (max-width: 767px){
   .post{
     margin-bottom: 10%;
+  }
+
+  .profilePicture img{
+    width: 100%;
+    height: 10em;
+  }
+
+  .publication img{
+    margin-bottom: 20%;
+    border-radius: 0.5em;
+  }
+
+  .backgroundImg{
+    height: 10em;
   }
 }
 
