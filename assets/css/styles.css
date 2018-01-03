@@ -57,10 +57,6 @@ body, html {
   padding-bottom:3px;
 }
 
-.navbar {
-  position: relative;
-}
-
 .navbar-brand{
   padding:10px 15px
 }
@@ -71,13 +67,12 @@ body, html {
   padding-top:11px;
 }
 
-.searchico {
-  font-size: 20px;
+.fas:hover{
+  cursor: pointer;
 }
 
-.navbar-nav .user a{
-  padding-top: 0;
-  margin-top: 3%;
+.searchico {
+  font-size: 20px;
 }
 
 .user img{
@@ -95,6 +90,12 @@ body, html {
 .contact{
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.contact:hover{
+  filter: brightness(0.8);
+  background-color: rgba(79, 79, 79, 0.20);
+  cursor: pointer;
 }
 
 .nameContact{
@@ -164,6 +165,10 @@ body, html {
   margin-bottom: 20%;
 }
 
+.postAuthor img:hover{
+  cursor: pointer;
+}
+
 .photoProfile{
   padding: 0;
 }
@@ -175,6 +180,10 @@ body, html {
 
 .like{
   font-size: 2.3em;
+}
+
+.like:hover{
+  cursor: pointer;
 }
 
 /*menu responsive inferior*/
@@ -207,7 +216,7 @@ body, html {
   width: 100%;
   border-radius: 50%;
   margin-top: 30%;
-  height: 30em;
+  height: 32em;
 }
 
 .description{
@@ -217,6 +226,11 @@ body, html {
 .publication img{
   width: 100%;
   border-radius: 0.5em;
+  margin-bottom: 15%;
+}
+
+.publication img:hover{
+  filter: brightness(0.8);
 }
 
 /*media queries*/
@@ -227,7 +241,7 @@ body, html {
 
   .profilePicture img{
     width: 100%;
-    height: 10em;
+    height: 8.5em;
   }
 
   .publication img{
