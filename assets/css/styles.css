@@ -1,4 +1,58 @@
+/*modal inicio*/
+.panel-heading {
+    padding: 5px 15px;
+}
 
+.panel-footer {
+  padding: 1px 15px;
+  color: #A0A0A0;
+}
+
+h4{
+  margin:0;
+}
+.profile-img {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/*modal fin*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.inicio {
+  background: url("../img/catlogimg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.catbooktxt {
+  text-align: center;
+  margin-top:15%;
+  color: #fff;
+  font-size: 70px;
+}
+
+.login{
+  padding-top: 5%;
+}
+.signupb,.loginb{
+  width:50vh;
+  margin-top:10px;
+}
+
+
+
+/*login page fin*/
 .catico {
   width: 35px;
   height: 35px;

@@ -10,6 +10,144 @@
    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.2/web-fonts-with-css/css/fontawesome-all.min.css">
 </head>
 <body>
+
+  <!-- modal signup inicio -->
+  <div class="inicio">
+<div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="container" style="margin-top:40px">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <strong> Registro de Usuario</strong>
+          </div>
+          <div class="panel-body">
+              <fieldset>
+                <div class="row">
+                  <div class="center-block">
+                    <img class="profile-img"
+                      src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-10 col-md-offset-1 ">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="glyphicon glyphicon-user"></i>
+                        </span>
+                        <input class="form-control" id="email" type="email" placeholder="Email" name="loginmail" type="text" autofocus>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="glyphicon glyphicon-lock"></i>
+                        </span>
+                        <input id="contrasena" type="password" class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button id="sendd" class="send btn btn-lg btn-primary btn-block">Regístrate</button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+          </div>
+          <div class="panel-footer ">
+            ¿Ya tienes una cuenta? <a href="#" onClick=""> Inicia Sesión </a>
+          </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- modal signup fin -->
+
+   <!-- modal login ini -->
+   <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="container" style="margin-top:40px">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <strong> Inicio de Sesión</strong>
+          </div>
+          <div class="panel-body">
+              <fieldset>
+                <div class="row">
+                  <div class="center-block">
+                    <img class="profile-img"
+                      src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-10 col-md-offset-1 ">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="glyphicon glyphicon-user"></i>
+                        </span>
+                        <input class="form-control" id="email2" type="email" placeholder="Email" name="loginmail" type="text" autofocus>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="glyphicon glyphicon-lock"></i>
+                        </span>
+                        <input id="contrasena2" type="password" class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button id="loginbtn" class="loginbtn btn btn-lg btn-primary btn-block">Inicia Sesión</button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+          </div>
+          <div class="panel-footer ">
+            ¿No tienes una cuenta? <a href="#" onClick=""> Regístrate </a>
+          </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- modal login end -->
+  <!-- logintext ini -->
+
+  <h4>Registro de usuario</h4>
+  <input id="email" type="email" placeholder="ingresa email">
+  <input id="contrasena" type="password" placeholder="ingresa contraseña">
+  <button class="send" id="sendd">enviar</button>
+
+  <h4>Ingreso de usuarios</h4>
+    <input id="email2" type="email" placeholder="ingresa email">
+  <input id="contrasena2" type="password" placeholder="ingresa contraseña">
+  <button class="loginbtn">acceder</button>
+
+  <div id="contenido">
+    
+  
+  </div>
+
+  <!-- logintest fin -->
+<!-- contenedor login -->
+  <div class="login">
+    <div class="col-lg-offset-3 col-xs-12 col-lg-6">
+    <div class="bglg">
+      </div>
+     <h1 class="catbooktxt">Catbook</h1>
+     <div class="text-center">
+     <button type="button" data-toggle="modal" data-target="#signupmodal" class="signupb btn btn-primary btn-md">Regístrate</button></div>
+     <div class="text-center">
+     <button type="button" data-toggle="modal" data-target="#loginmodal" class="loginb btn btn-primary btn-md">Inicia sesión</button></div>
+    </div>
+  </div>
+  <!-- fin contenedor login -->
+  </div>
+<div class="pageini">
   <!-- inicio navbar -->
 <nav class="navbar navbar-default">
   <div class="container-fluid col-md-offset-1 col-md-10">
@@ -172,8 +310,13 @@
   </div>
 
 </section>
+</div>
   <!-- scripts -->
   <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
