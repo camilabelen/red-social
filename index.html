@@ -191,12 +191,12 @@
       <!-- publicaciones -->
       <div class="col-lg-8 news col-lg-offset-1">
         <div class="">
-          <div class="col-lg-10 newPost">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-sm-offset-1 newPost hidden-xs">
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-lg-2 col-md-2 col-sm-2">
                 <img src="assets/img/gato5.jpg" alt="">
               </div>
-              <div class="col-lg-10 textareaNewPost">
+              <div class="col-lg-10 col-md-10 col-sm-10 textareaNewPost">
                 <div class="form-group">
                   <textarea class="form-control" rows="1" id="post" placeholder="¿Qué haces hoy?"></textarea>
                   <button type="button" class="btn btn-default btn-md">
@@ -212,9 +212,9 @@
         </div>
         <!-- post -->
         <div class="">
-          <div class="col-lg-10 post">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">
             <div class="postAuthor">
-              <div class="col-lg-1 photoProfile">
+              <div class="col-lg-1 col-xs-2 photoProfile">
                  <img src="assets/img/gato8.jpg" alt="foto_contacto_3">
               </div>
               <div class="col-lg-10 name">
@@ -223,8 +223,7 @@
             </div>
             <img src="assets/img/gato2.jpg" alt="foto_post">
             <div class="col-lg-12">
-              <span class="glyphicon glyphicon-heart-empty btn-lg"></span>
-              <span class="glyphicon glyphicon-comment btn-lg"></span>
+              <span class="glyphicon glyphicon-heart-empty like"></span>
             </div>
             <div class="col-lg-12">
               <p><strong>Bola de nieve III</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
@@ -233,9 +232,9 @@
               <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
             </div>
           </div>
-          <div class="col-lg-10 post"> 
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post"> 
             <div class="postAuthor">
-              <div class="col-lg-1 photoProfile">
+              <div class="col-lg-1 col-xs-2 photoProfile">
                  <img src="assets/img/gato7.jpg" alt="foto_contacto_3">
               </div>
               <div class="col-lg-10 name">
@@ -244,8 +243,7 @@
             </div>
             <img src="assets/img/gato4.jpg" alt="foto_post">
             <div class="col-lg-12">
-              <span class="glyphicon glyphicon-heart-empty btn-lg"></span>
-              <span class="glyphicon glyphicon-comment btn-lg"></span>
+              <span class="glyphicon glyphicon-heart-empty like"></span>
             </div>
             <div class="col-lg-12">
               <p><strong>Kitty</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
@@ -255,10 +253,9 @@
               <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
             </div>
           </div>
-        </div>
-       
+        </div>       
       </div>
-      <div class="col-lg-2 contacts">
+      <div class="col-lg-2 contacts hidden-xs hidden-sm">
         <div class="row">
           <div class="col-lg-12">
             <h4>Contactos</h4>
@@ -308,9 +305,22 @@
       </div>
     </div>
   </div>
-
 </section>
+  <!-- Menu fijo inferior version mobile-->
+<nav class="navbar navbar-default navbar-fixed-bottom hidden-lg hidden-md">
+  <div class="container">
+    <div class="nav navbar-nav menuBottom">
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li role=""><a href="#"><span class="glyphicon glyphicon-camera"></span></a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+
+      </ul>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
 </div>
+
   <!-- scripts -->
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/app.js"></script>
