@@ -48,7 +48,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <button id="sendd" class="send btn btn-lg btn-primary btn-block">Regístrate</button>
+                      <button id="sendd" class="send btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#mailsendmodal">Regístrate</button>
                     </div>
                   </div>
                 </div>
@@ -115,24 +115,7 @@
   </div>
 </div>
    <!-- modal login end -->
-  <!-- logintext ini -->
 
-  <h4>Registro de usuario</h4>
-  <input id="email" type="email" placeholder="ingresa email">
-  <input id="contrasena" type="password" placeholder="ingresa contraseña">
-  <button class="send" id="sendd">enviar</button>
-
-  <h4>Ingreso de usuarios</h4>
-    <input id="email2" type="email" placeholder="ingresa email">
-  <input id="contrasena2" type="password" placeholder="ingresa contraseña">
-  <button class="loginbtn">acceder</button>
-
-  <div id="contenido">
-    
-  
-  </div>
-
-  <!-- logintest fin -->
 <!-- contenedor login -->
   <div class="login">
     <div class="col-lg-offset-3 col-xs-12 col-lg-6">
@@ -175,10 +158,16 @@
             </div>
         </div>
       </form>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right href="#"">
         <li><i class="fas fa-camera-retro"></i></li>
         <li><i class="fas fa-heart"></i></li>
-        <li><i class="fas fa-paw"></i></li>
+      <li class="dropdown">
+        <i class="fas fa-paw dropdown-toggle" data-toggle="dropdown" href="#""></i>
+        <ul class="dropdown-menu">
+          <li><a href="#">Editar Perfil</a></li>
+          <li><a href="#" class="logout">Cerrar Sesión</a></li>
+        </ul>
+      </li>
       </ul>
       </ul>
     </div><!-- /.navbar-collapse -->

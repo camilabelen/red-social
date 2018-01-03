@@ -1,6 +1,4 @@
-  /*$(".pageini").hide() esto ira cuando el registro este funcional*/
-
-$(".inicio").hide() //esto esta mientras termino el registro
+$(".pageini").hide()
 
 $(document).ready(function(){
   $(".login").show()
@@ -11,6 +9,7 @@ $(".send").click(function(){
 $(".loginbtn").click(function(){
   $('#loginmodal').modal('toggle')
 })
+
  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAd7xNUJssjA3v-i8zDfhpY6Lg3R5MGQy8",
@@ -45,6 +44,8 @@ firebase.auth().createUserWithEmailAndPassword(email, contrasena)
 $(".loginbtn").click(function(){
   var email2 = document.getElementById("email2").value;
   var contrasena2 = document.getElementById("contrasena2").value;
+  $(".inicio").hide()
+$(".pageini").show()
 
 firebase.auth().signInWithEmailAndPassword(email2, contrasena2).catch(function(error) {
   // Handle Errors here.
@@ -87,15 +88,13 @@ function aparece(user){
   var user = user;
   var contenido = document.getElementById("contenido");
   if(user.emailVerified){
-contenido.innerHTML = `
-  <p>Bienvenido!</p>
-
-  <button click="cerrar()" class="closes">Cerrar sesión</button>
-  `
+alert("Tu correo ha sido verificado")
+if(user.emailVerified == false)
+alert("Verifica tu correo")
   }
 
 
-$(".closes").click(function(){
+$(".logout").click(function(){
 firebase.auth().signOut()
 .then(function(){
 console.log("saliendo...")
@@ -103,6 +102,8 @@ console.log("saliendo...")
 .catch(function(error){
 console.log(error)
 })
+$(".pageini").hide();
+$(".inicio").show();
 });
 }
 
@@ -111,11 +112,13 @@ function verificar(){
 
 user.sendEmailVerification().then(function() {
   // Email sent.
-  console.log("enviando correo...");
+  alert("Enviando correo de verificación, una vez verificado su correo inicie sesión");
+
 }).catch(function(error) {
   // An error happened.
-  console.log("error");
+  alert("Ha ocurrido un error");
 });
 }
+
 });
 
