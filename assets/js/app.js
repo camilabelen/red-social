@@ -140,5 +140,19 @@ user.sendEmailVerification().then(function() {
 
 //modal para subir archivos
 
+//Añadir comentarios Comentarios
+  $('#comment').keyup(function(e){
+    if(e.keyCode == 13){
+      var newComment = $('#comment').val();
+      $('.allComments').append('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">'+ '<p class="col-lg-10">' + newComment + '</p>' + '<span class="col-lg-1 glyphicon glyphicon-heart">' + '</span>' + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>' +'</div>');
+      $('#comment').val('');
+      $('.newComment').hide();
+    }
+  });
+  //ver comentarios
+  $('.allComments p').click(function(){
+    $('.newComment').show();
+  });
+
 });
 

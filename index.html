@@ -201,12 +201,12 @@
                 <div class="col-lg-10 col-md-10 col-sm-10 textareaNewPost">
                   <div class="form-group">
                     <textarea class="form-control" rows="1" id="post" placeholder="¿Qué haces hoy?"></textarea>
-                    <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modal1">
-                      <span class="glyphicon glyphicon-picture"></span> Foto
-                    </button>
-                    <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modal1">
-                      <span class="glyphicon glyphicon-film "></span> Video
-                    </button>
+                    <input type="file" name="imageUpload" id="imageUpload" class="hide"/> 
+                    <label for="imageUpload" class="btn btn-large"><span class="glyphicon glyphicon-picture"></span> Foto</label>
+                    
+                    <input type="file" name="imageUpload" id="imageUpload" class="hide"/> 
+                    <label for="imageUpload" class="btn btn-large"><span class="glyphicon glyphicon-film"></span> Video</label>                             
+                    <img src="" id="imagePreview" alt="" width="200px"/>
                     <button type="button" class="btn btn-default btn-md publish" data-toggle="modal" data-target="#modal1">Publicar
                     </button>
                     
@@ -233,9 +233,14 @@
               <div class="col-lg-12">
                 <p><strong>Bola de nieve III</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 allComments">
+                <p class="showComment"><strong>Mostrar Comentarios...</strong></p>
               </div>
+              <div class="col-lg-12 col-xs-12">
+                <div class="form-group">
+                  <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+                </div>
+              </div>              
             </div> 
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post"> 
               <div class="postAuthor">
@@ -250,13 +255,17 @@
               <div class="col-lg-12">
                 <span class="glyphicon glyphicon-heart-empty like"></span>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-xs-12">
                 <p><strong>Kitty</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, non, modi! Iure labore hic, voluptatum similique quas cumque animi cum quaerat, possimus unde inventore voluptatem adipisci sit totam neque nulla.</p>
               </div>
-              <hr>
-              <div class="form-group">
-                <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 allComments">
+                <p class="showComment"><strong>Mostrar Comentarios...</strong></p>
               </div>
+              <div class="col-lg-12 col-xs-12">
+                <div class="form-group">
+                  <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+                </div>
+              </div>              
             </div>
           </div>       
         </div>
