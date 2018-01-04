@@ -100,6 +100,7 @@ body, html {
 
 .fas:hover{
   cursor: pointer;
+  color:#6F6F6F;
 }
 
 .searchico {
@@ -225,6 +226,35 @@ body, html {
 
 .like:hover{
   cursor: pointer;
+}
+
+/*nuevos comentarios*/
+.newComment{
+  border: 1px solid #CBCBCB;
+  border-radius: 0.5em;
+  margin-bottom: 3%;
+}
+
+.newComment p{
+  margin-top: 1.8%;
+}
+
+.newComment span{
+  margin-top: 2%;
+}
+
+.newComment span:hover{
+  color:#6F6F6F;
+  cursor: pointer;
+}
+
+.showComment{
+  color: #929292;
+}
+
+.showComment:hover{
+  cursor: pointer;
+  color: #000;
 }
 
 /*menu responsive inferior*/
