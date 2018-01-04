@@ -199,28 +199,29 @@
           <div class="">
             <div class="col-lg-10 col-md-10 col-sm-10 col-sm-offset-1 newPost hidden-xs">
               <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="col-lg-2 col-md-2 col-sm-2 me">
                   <img src="assets/img/gato5.jpg" alt="">
                 </div>
                 <div class="col-lg-10 col-md-10 col-sm-10 textareaNewPost">
                   <div class="form-group">
                     <textarea class="form-control" rows="1" id="post" placeholder="¿Qué haces hoy?"></textarea>
+                    <div class="col-lg-12">
+                      <div class="col-lg-3 uploadImg">
+                      </div>            
+                    </div>              
                     <input type="file" name="imageUpload" id="imageUpload" class="hide"/> 
                     <label for="imageUpload" class="btn btn-large"><span class="glyphicon glyphicon-picture"></span> Foto</label>
-                    
                     <input type="file" name="imageUpload" id="imageUpload" class="hide"/> 
-                    <label for="imageUpload" class="btn btn-large"><span class="glyphicon glyphicon-film"></span> Video</label>                             
-                    <img src="" id="imagePreview" alt="" width="200px"/>
-                    <button type="button" class="btn btn-default btn-md publish" data-toggle="modal" data-target="#modal1">Publicar
-                    </button>
-                    
+                    <label for="imageUpload" class="btn btn-large"><span class="glyphicon glyphicon-film"></span> Video</label>
+                    <button type="button" class="btn btn-default btn-md publish">Publicar
+                    </button>          
                   </div>
                 </div>
               </div>
-            </div>
+            </div><!-- fin textarea para nuevo post -->
           </div>
           <!-- post -->
-          <div class="">
+            <div class="col-lg-12 col-md-10 col-sm-10 col-xs-12 allPost"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">
               <div class="postAuthor">
                 <div class="col-lg-1 col-xs-2 photoProfile">
@@ -242,10 +243,10 @@
               </div>
               <div class="col-lg-12 col-xs-12">
                 <div class="form-group">
-                  <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+                  <textarea class="form-control comment" rows="1" placeholder="Escribe un comentario..."></textarea>
                 </div>
-              </div>              
-            </div> 
+              </div>  <!-- fin textarea para comentarios -->
+            </div> <!-- fin primer post -->
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post"> 
               <div class="postAuthor">
                 <div class="col-lg-1 col-xs-2 photoProfile">
@@ -267,12 +268,11 @@
               </div>
               <div class="col-lg-12 col-xs-12">
                 <div class="form-group">
-                  <textarea class="form-control" rows="1" id="comment" placeholder="Escribe un comentario..."></textarea>
+                  <textarea class="form-control comment" rows="1" placeholder="Escribe un comentario..."></textarea>
                 </div>
-              </div>              
-            </div>
-          </div>       
-        </div>
+              </div><!-- fin textarea para comentarios -->    
+            </div><!-- fin segundo post -->
+          </div><!-- fin news -->
         <!-- inicio contactos -->
         <div class="col-lg-2 contacts hidden-xs hidden-sm">
           <div class="row">
