@@ -17,7 +17,7 @@ $(".loginbtn").click(function(){
 $(".catico").click(function(){
   $(".pageini").show()
   $(".perfilcontainer").hide()
-  $(".perfilcontainer").hide()
+  $(".addcontact").hide()
 })
 
 $(".notacc").click(function(){

@@ -45,6 +45,7 @@ h4{
 }
 .img-responsive{
   border-radius: 0.5em;
+  cursor:pointer;
 }
 .profile-img {
   width: 96px;
