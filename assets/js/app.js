@@ -169,15 +169,19 @@ user.sendEmailVerification().then(function() {
 //Añadir comentarios Comentarios
   $('.comment').keyup(function(e){
     if(e.keyCode == 13){
-      var newComment = $('.comment').val();      
-      $('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">'+ '<p class="col-lg-10">' + newComment + '</p>' + '<span class="col-lg-1 glyphicon glyphicon-heart">' + '</span>' + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>' +'</div>').insertBefore(this).closest('div');
-      $('.comment').val('');
+      var newComment = $(this).val();      
+      $('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">' + '<p class="col-lg-10">' + newComment + '</p>' + '<span class="col-lg-1 glyphicon glyphicon-heart">' + '</span>' + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>' +'</div>').insertBefore(this).closest('div');
+      $(this).val('');
       $('.newComment').hide();
     }
   });
   //ver comentarios
   $('.allComments p').click(function(){
     $('.newComment').show();
+  });
+  //eliminar comentarios
+  $('.glyphicon-trash').click(function(){
+    $(this).parent().remove();
   });
   //subir imagen
   $('#imageUpload').change(function(){      
@@ -186,8 +190,8 @@ user.sendEmailVerification().then(function() {
          if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-              $('.uploadImg').append('<img src="" id="imagePreview" alt="" width="5em"/>');                 
               $('#imagePreview').attr('src', e.target.result);
+              $('.uploadImg').append('<img src="" id="imagePreview" alt="" width="5em"/>');
               $('#imagePreview').css('marginTop','1%');
               $('#imagePreview').css('paddingTop','3%');
               $('#imagePreview').css('paddingBottom', '8%');
@@ -201,12 +205,12 @@ user.sendEmailVerification().then(function() {
     });
   //Borrar imagen
    $('.deleteImg').click(function(){
-    
+    $('#imagePreview').remove();
   });
   //Hacer publicación
   $('.publish').click(function(){
-    var newPost = $('#post').val();
-    var img = $('#imagePreview');
+    var newPost = $('.addPost').val();
+    var img = $('#imagePreview').attr('src', '+imagen[0].src+');
     $('.allPost').append('<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">' 
                       + '<div class="postAuthor">' + '<div class="col-lg-1 col-xs-2 photoProfile">' 
                       + '<img src="assets/img/gato5.jpg">' + '</div>' + '<div class="col-lg-10 name">' + '<h5>' + '<strong>' 
@@ -220,7 +224,7 @@ user.sendEmailVerification().then(function() {
                       + '<div class="form-group">' 
                       + '<textarea class="form-control comment" rows="1" placeholder="Escribe un comentario...">' 
                       + '</textarea>' + '</div>' + '</div>' + '</div>');
-    $('#post').val('');
+    $('.addPost').val('');
   });
 });
 
