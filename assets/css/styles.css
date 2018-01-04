@@ -2,12 +2,30 @@
 .panel-heading {
     padding: 5px 15px;
 }
-
+.notif{
+  width: 400px;
+}
 .panel-footer {
   padding: 1px 15px;
   color: #A0A0A0;
 }
-
+.contname{
+  font-weight: bold;
+  padding-left: 3%;
+}
+.editperf2{
+  background-color: #fff;
+}
+.editperf{
+  font-weight: bold;
+  overflow:hidden;
+  background-color: #E8E8E8;
+}
+.notc{
+  width: 15%;
+  height: 3.5em;
+  border-radius: 50%;
+}
 h4{
   margin:0;
 }

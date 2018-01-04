@@ -1,4 +1,7 @@
+$(".perfilcontainer").hide()
 $(".pageini").hide()
+$(".perfilcontainer").hide()
+$(".navbarcontainer").hide()
 
 $(document).ready(function(){
   $(".login").show()
@@ -10,6 +13,17 @@ $(".loginbtn").click(function(){
   $('#loginmodal').modal('toggle')
 })
 
+$(".editperf").click(function(){
+  $(".pageini").hide()
+  $(".navbarcontainer").show()
+  $(".perfilcontainer").show()
+})
+
+$(".catico").click(function(){
+  $(".pageini").show()
+  $(".perfilcontainer").hide()
+})
+
  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAd7xNUJssjA3v-i8zDfhpY6Lg3R5MGQy8",
@@ -18,6 +32,7 @@ $(".loginbtn").click(function(){
     projectId: "fine-climber-188103",
     storageBucket: "fine-climber-188103.appspot.com",
     messagingSenderId: "693407936885"
+
   };
   firebase.initializeApp(config);
 
@@ -44,8 +59,8 @@ firebase.auth().createUserWithEmailAndPassword(email, contrasena)
 $(".loginbtn").click(function(){
   var email2 = document.getElementById("email2").value;
   var contrasena2 = document.getElementById("contrasena2").value;
-  $(".inicio").hide()
-$(".pageini").show()
+  
+
 
 firebase.auth().signInWithEmailAndPassword(email2, contrasena2).catch(function(error) {
   // Handle Errors here.
@@ -89,10 +104,12 @@ function aparece(user){
   var contenido = document.getElementById("contenido");
   if(user.emailVerified){
 alert("Tu correo ha sido verificado")
-if(user.emailVerified == false)
-alert("Verifica tu correo")
-  }
-
+  $(".inicio").hide()
+$(".pageini").show()
+$(".navbarcontainer").show()
+  }else{
+    alert("Verifica tu correo o no podrás loguear")
+}
 
 $(".logout").click(function(){
 firebase.auth().signOut()
@@ -104,6 +121,7 @@ console.log(error)
 })
 $(".pageini").hide();
 $(".inicio").show();
+$(".navbarcontainer").hide()
 });
 }
 

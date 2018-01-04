@@ -130,8 +130,8 @@
   </div>
   <!-- fin contenedor login -->
   </div>
-<div class="pageini">
   <!-- inicio navbar -->
+  <div class="navbarcontainer">
 <nav class="navbar navbar-default">
   <div class="container-fluid col-md-offset-1 col-md-10">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -160,11 +160,21 @@
       </form>
       <ul class="nav navbar-nav navbar-right href="#"">
         <li><i class="fas fa-camera-retro"></i></li>
-        <li><i class="fas fa-heart"></i></li>
+        <li class="dropdown">
+          <i class="fas fa-heart dropdown-toggle" data-toggle="dropdown" href="#"></i>
+        <ul class="dropdown-menu notif">
+          <h6 class="dropdown-header">Notificaciones recientes</h6>
+          <li><a href="#" class="editperf"><img class="notc" src="assets/img/gato7.jpg" alt=""> <span class="contname">Kitty</span><span> ha subido una foto</span><p>hace 23 minutos</p></a></li>
+          <li><a href="#" class="editperf2"><img class="notc" src="assets/img/gato12.jpg" alt=""> <span class="contname">Dexter</span><span> comenzó a seguirte </span><p> 2 horas atrás</p></a></li>
+          <li><a href="#" class="editperf"><img class="notc" src="assets/img/gato8.jpg" alt=""> <span class="contname">Bola de nieve III</span><span> comenzó a seguirte</span><p> 6 horas atrás</p></a></li>
+          <li><a href="#" class="editperf2"><img class="notc" src="assets/img/gato11.jpg" alt=""> <span class="contname">A <b>Peaches</b></span><span> le ha gustado tu foto </span><p> 9 horas atrás</p></a></li>
+          <li><a href="#" class="editperf"><img class="notc" src="assets/img/gato6.jpg" alt=""> <span class="contname">Benito</span><span> ha subido una foto</span><p>un día atrás</p></a></li>
+        </ul>
+      </li>
       <li class="dropdown">
-        <i class="fas fa-paw dropdown-toggle" data-toggle="dropdown" href="#""></i>
+        <i class="fas fa-paw dropdown-toggle" data-toggle="dropdown" href="#"></i>
         <ul class="dropdown-menu">
-          <li><a href="#">Editar Perfil</a></li>
+          <li><a href="#" class="editperf">Perfil de usuario</a></li>
           <li><a href="#" class="logout">Cerrar Sesión</a></li>
         </ul>
       </li>
@@ -173,7 +183,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+</div>
 <!-- fin navbar -->
+<div class="pageini">
   <section>
     <div class="container-fluid">
       <div class="row">
@@ -336,7 +348,9 @@
       </div>
     </div>
   </div>
+</div>
   <!--inicio vista perfil -->
+  <div class="perfilcontainer">
   <section id="profile">
     <div class="container-fluid profile">
       <div class="row">
