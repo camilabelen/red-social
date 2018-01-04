@@ -13,16 +13,16 @@
   font-weight: bold;
   padding-left: 3%;
 }
-.editperf2{
+.catcont2{
   background-color: #fff;
 }
-.editperf{
+.catcont{
   font-weight: bold;
   overflow:hidden;
   background-color: #E8E8E8;
 }
 .notc{
-  width: 15%;
+  width: 3.7em;
   height: 3.5em;
   border-radius: 50%;
 }
@@ -254,10 +254,10 @@ body, html {
 }
 
 .profilePicture img{
-  width: 100%;
+  width: 30em;
   border-radius: 50%;
   margin-top: 30%;
-  height: 32em;
+  height: 30em;
 }
 
 .description{
@@ -281,8 +281,8 @@ body, html {
   }
 
   .profilePicture img{
-    width: 100%;
-    height: 8.5em;
+    width: 30vh;
+    height: 30vh;
   }
 
   .publication img{
