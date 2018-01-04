@@ -203,10 +203,10 @@ user.sendEmailVerification().then(function() {
   $('.comment').keyup(function(e){
     if(e.keyCode == 13){
       var newComment = $(this).val();
-      $('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">' 
+      $('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">'
         + '<p class="col-lg-10">' + newComment + '</p>'
-        + '<span class="col-lg-1 glyphicon glyphicon-heart">' + '</span>' 
-        + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>' 
+        + '<span class="col-lg-1 glyphicon glyphicon-heart">' + '</span>'
+        + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>'
         +'</div>').insertBefore(this).closest('div');
       $(this).val('');
       $('.newComment').hide();
@@ -249,19 +249,19 @@ user.sendEmailVerification().then(function() {
   $('.publish').click(function(){
     var newPost = $('.addPost').val();
     var img = $('#imagePreview');
-    $('.allPost').prepend('<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">' 
-                      + '<div class="postAuthor">' + '<div class="col-lg-1 col-xs-2 photoProfile">' 
-                      + '<img src="assets/img/gato5.jpg">' + '</div>' + '<div class="col-lg-10 name">' 
-                      + '<h5>' + '<strong>' + 'Pelusa' + '</strong>' + '</h5>' + '</div>' + '</div>' 
-                      + '<div>' + '<img src='+img[0].src+'>' + '</div>' + '<div class="col-lg-12">' 
-                      + '<span class="glyphicon glyphicon-heart-empty like">' + '</span>' + '</div>' 
-                      + '<div class="col-lg-12 col-xs-12">' + '<p>' + '<strong>' + 'Pelusa ' 
-                      + '</strong>' + newPost + '</p>' + '</div>' 
-                      + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 allComments">' 
-                      + '<p class="showComment">' + '<strong>' + 'Mostrar Comentarios...' 
-                      + '</strong>' + '</p>' + '</div>' + '<div class="col-lg-12 col-xs-12">' 
+    $('.allPost').prepend('<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">'
+                      + '<div class="postAuthor">' + '<div class="col-lg-1 col-xs-2 photoProfile">'
+                      + '<img src="assets/img/gato5.jpg">' + '</div>' + '<div class="col-lg-10 name">'
+                      + '<h5>' + '<strong>' + 'Pelusa' + '</strong>' + '</h5>' + '</div>' + '</div>'
+                      + '<div>' + '<img src='+img[0].src+'>' + '</div>' + '<div class="col-lg-12">'
+                      + '<span class="glyphicon glyphicon-heart-empty like">' + '</span>' + '</div>'
+                      + '<div class="col-lg-12 col-xs-12">' + '<p>' + '<strong>' + 'Pelusa '
+                      + '</strong>' + newPost + '</p>' + '</div>'
+                      + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 allComments">'
+                      + '<p class="showComment">' + '<strong>' + 'Mostrar Comentarios...'
+                      + '</strong>' + '</p>' + '</div>' + '<div class="col-lg-12 col-xs-12">'
                       + '<div class="form-group">'
-                      + '<textarea class="form-control comment" rows="1" placeholder="Escribe un comentario...">' 
+                      + '<textarea class="form-control comment" rows="1" placeholder="Escribe un comentario...">'
                       + '</textarea>' + '</div>' + '</div>' + '</div>');
     $('.addPost').val('');
   });
