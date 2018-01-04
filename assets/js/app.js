@@ -1,7 +1,8 @@
 $(".perfilcontainer").hide()
 $(".pageini").hide()
-$(".perfilcontainer").hide()
 $(".navbarcontainer").hide()
+$(".menuinf").hide()
+$(".addcontact").hide()
 
 $(document).ready(function(){
   $(".login").show()
@@ -13,17 +14,40 @@ $(".loginbtn").click(function(){
   $('#loginmodal').modal('toggle')
 })
 
-$(".editperf").click(function(){
-  $(".pageini").hide()
-  $(".navbarcontainer").show()
-  $(".perfilcontainer").show()
-})
-
 $(".catico").click(function(){
   $(".pageini").show()
   $(".perfilcontainer").hide()
+  $(".perfilcontainer").hide()
 })
 
+$(".notacc").click(function(){
+  $('#loginmodal').modal('toggle')
+  $('#signupmodal').modal('show');
+})
+
+$(".alracc").click(function(){
+  $('#signupmodal').modal('toggle')
+  $('#loginmodal').modal('show');
+})
+
+  $(".editperf").click(function(){
+  $(".menuinf").show()
+  $(".pageini").hide()
+  $(".navbarcontainer").show()
+  $(".perfilcontainer").show()
+  $(".addcontact").hide()
+})
+
+$(".icon-icon_cat-01").click(function(){
+  $(".addcontact").show()
+  $(".pageini").hide()
+  $(".perfilcontainer").hide()
+})
+
+$(".homemobile").click(function(){
+  $(".addcontact").hide()
+  $(".pageini").show()
+})
  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAd7xNUJssjA3v-i8zDfhpY6Lg3R5MGQy8",
@@ -106,6 +130,8 @@ function aparece(user){
 alert("Tu correo ha sido verificado")
   $(".inicio").hide()
 $(".pageini").show()
+$(".perfilcontainer").hide()
+$(".menuinf").show()
 $(".navbarcontainer").show()
   }else{
     alert("Verifica tu correo o no podrás loguear")

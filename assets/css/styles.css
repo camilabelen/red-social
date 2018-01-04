@@ -29,6 +29,23 @@
 h4{
   margin:0;
 }
+.caticoup{
+  font-size: 28px;
+  padding: 9px;
+  color: #333;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+  margin-bottom: 30px;
+}
+.img-responsive{
+  border-radius: 0.5em;
+}
 .profile-img {
   width: 96px;
   height: 96px;
