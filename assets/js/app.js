@@ -170,7 +170,11 @@ user.sendEmailVerification().then(function() {
   $('.comment').keyup(function(e){
     if(e.keyCode == 13){
       var newComment = $(this).val();      
-      $('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">' + '<p class="col-lg-10">' + newComment + '</p>' + '<span class="col-lg-1 glyphicon glyphicon-heart">' + '</span>' + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>' +'</div>').insertBefore(this).closest('div');
+      $('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">' 
+        + '<p class="col-lg-10">' + newComment + '</p>' 
+        + '<span class="col-lg-1 glyphicon glyphicon-heart">' + '</span>' 
+        + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>' 
+        +'</div>').insertBefore(this).closest('div');
       $(this).val('');
       $('.newComment').hide();
     }
@@ -185,39 +189,41 @@ user.sendEmailVerification().then(function() {
   });
   //subir imagen
   $('#imageUpload').change(function(){      
-      readImgUrlAndPreview(this);
-      function readImgUrlAndPreview(input){
-         if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-              $('#imagePreview').attr('src', e.target.result);
-              $('.uploadImg').append('<img src="" id="imagePreview" alt="" width="5em"/>');
-              $('#imagePreview').css('marginTop','1%');
-              $('#imagePreview').css('paddingTop','3%');
-              $('#imagePreview').css('paddingBottom', '8%');
-              $('.uploadImg').css('border','1px solid #CBCBCB');
-              $('.uploadImg').prepend('<button type="button" class="close deleteImg" aria-label="Close">' + '<span aria-hidden="true">' + '&times;' + '</span>');
-              $('.uploadImg').css('marginTop', '3%')
-            }
-          };
-        reader.readAsDataURL(input.files[0]);
-      }  
-    });
-  //Borrar imagen
-   $('.deleteImg').click(function(){
-    $('#imagePreview').remove();
+    readImgUrlAndPreview(this);
+    function readImgUrlAndPreview(input){
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          $('.uploadImg').append('<img src="" id="imagePreview" alt="" width="5em"/>');                 
+          $('#imagePreview').attr('src', e.target.result);
+          $('#imagePreview').css('marginTop','1%');
+          $('#imagePreview').css('paddingTop','3%');
+          $('#imagePreview').css('paddingBottom', '8%');
+          $('.uploadImg').css('border','1px solid #CBCBCB');
+          $('.uploadImg').prepend('<button type="button" class="close deleteImg" aria-label="Close">' + '<span aria-hidden="true">' + '&times;' + '</span>');
+          $('.uploadImg').css('marginTop', '3%')
+        }
+      };
+      reader.readAsDataURL(input.files[0]);
+    }  
   });
+
+   //Borrar imagen
+  $('.deleteImg').click(function(){
+     
+   });
   //Hacer publicación
   $('.publish').click(function(){
     var newPost = $('.addPost').val();
-    var img = $('#imagePreview').attr('src', '+imagen[0].src+');
-    $('.allPost').append('<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">' 
+    var img = $('#imagePreview');
+    $('.allPost').prepend('<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">' 
                       + '<div class="postAuthor">' + '<div class="col-lg-1 col-xs-2 photoProfile">' 
-                      + '<img src="assets/img/gato5.jpg">' + '</div>' + '<div class="col-lg-10 name">' + '<h5>' + '<strong>' 
-                      + 'Pelusa' + '</strong>' + '</h5>' + '</div>' + '</div>' + img 
-                      + '<div class="col-lg-12">' + '<span class="glyphicon glyphicon-heart-empty like">' 
-                      + '</span>' + '</div>' + '<div class="col-lg-12 col-xs-12">' + '<p>' + '<strong>' 
-                      + 'Pelusa ' + '</strong>' + newPost + '</p>' + '</div>' 
+                      + '<img src="assets/img/gato5.jpg">' + '</div>' + '<div class="col-lg-10 name">' 
+                      + '<h5>' + '<strong>' + 'Pelusa' + '</strong>' + '</h5>' + '</div>' + '</div>' 
+                      + '<div>' + '<img src='+img[0].src+'>' + '</div>' + '<div class="col-lg-12">' 
+                      + '<span class="glyphicon glyphicon-heart-empty like">' + '</span>' + '</div>' 
+                      + '<div class="col-lg-12 col-xs-12">' + '<p>' + '<strong>' + 'Pelusa ' 
+                      + '</strong>' + newPost + '</p>' + '</div>' 
                       + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 allComments">' 
                       + '<p class="showComment">' + '<strong>' + 'Mostrar Comentarios...' 
                       + '</strong>' + '</p>' + '</div>' + '<div class="col-lg-12 col-xs-12">' 
