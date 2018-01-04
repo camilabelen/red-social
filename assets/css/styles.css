@@ -1,6 +1,6 @@
 /*modal inicio*/
 .panel-heading {
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 .notif{
   width: 400px;
@@ -36,9 +36,8 @@ h4{
 }
 .port-image
 {
-    width: 100%;
+  width: 100%;
 }
-
 .gallery_product
 {
   margin-bottom: 30px;
@@ -56,7 +55,6 @@ h4{
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-
 .veri{
   padding: 20px;
 }
@@ -71,10 +69,9 @@ h4{
 }
 /*modal fin*/
 body, html {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
-
 .inicio {
   background: url("../img/catlogimg.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -83,14 +80,12 @@ body, html {
   background-size: cover;
   height: 100%;
 }
-
 .catbooktxt {
   text-align: center;
   margin-top:15%;
   color: #fff;
   font-size: 70px;
 }
-
 .login{
   padding-top: 5%;
 }
@@ -105,7 +100,6 @@ body, html {
   height: 35px;
   padding-bottom:3px;
 }
-
 .navbar-brand{
   padding:10px 15px
 }
@@ -115,59 +109,52 @@ body, html {
   padding-right: 20px;
   padding-top:11px;
 }
-
 .fas:hover{
   cursor: pointer;
   color:#6F6F6F;
 }
-
 .searchico {
   font-size: 20px;
 }
-
 .user img{
   width: 12%;
 }
-
 /*barra lateral contactos*/
 .contacts{
-	border: 1px solid #CBCBCB;
-	height: auto;
+  border: 1px solid #CBCBCB;
+  height: auto;
   margin-top: 1.5%;
   border-radius: 0.5em;
 }
-
 .contacts h4{
   margin-top: 5%;
 }
-
 .contact{
   margin-top: 5%;
   margin-bottom: 5%;
 }
-
 .contact:hover{
   filter: brightness(0.8);
   background-color: rgba(79, 79, 79, 0.20);
   cursor: pointer;
 }
-
+.unfollowbtn{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
 .nameContact{
   margin-top: 5%;
 }
-
 .perfilNewPost img{
   width: 100%;
   border-radius: 50%;
 }
-
 .contacts img{
-  width: 100%;
+  width: 3.4em;
   height: 3.2em;
   border-radius: 50%;
-
 }
-
 /*Post Nuevo*/
 .newPost{
   border: 1px solid #CBCBCB;
@@ -176,122 +163,105 @@ body, html {
   margin-bottom: 4%;
   border-radius: 0.5em;
 }
-
-.newPost img{
-  width: 100%;
-  height: 6.2em;
+.me img{
+  width: 5.8em;
+  height: 5.8em;
   border-radius: 50%;
 }
-
 .textareaNewPost{
   padding: 0;
 }
-
 .textareaNewPost button{
   margin-top: 1%;
 }
-
 .publish{
   float: right;
 }
-
 .imgUser{
   padding: 0;
 }
-
+#imagePreview{
+  width: 100%;
+}
 /*seccion publicaciones*/
-#comment{
+.comment{
   margin-top: 1%;
   border: none;
 }
-
 .post{
   border: 1px solid #CBCBCB;
   border-radius: 0.5em;
   margin-bottom: 5%;
 }
-
 .post img{
   width: 100%;
   border-radius: 0.5em;
 }
-
+h5{
+  padding-left:15px;
+  padding-top: 8px;
+}
 .postAuthor img{
-  width: 80%;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
   margin-top: 20%;
   margin-bottom: 20%;
 }
-
 .postAuthor img:hover{
   cursor: pointer;
 }
-
 .photoProfile{
   padding: 0;
 }
-
 .name{
   padding: 0;
   margin-top: 2%;
 }
-
 .like{
   font-size: 2.3em;
   margin-top: 2.5%;
   margin-bottom: 2%;
 }
-
 .like:hover{
   cursor: pointer;
 }
-
 /*nuevos comentarios*/
 .newComment{
   border: 1px solid #CBCBCB;
   border-radius: 0.5em;
   margin-bottom: 3%;
 }
-
 .newComment p{
   margin-top: 1.8%;
 }
-
 .newComment span{
   margin-top: 2%;
 }
-
 .newComment span:hover{
   color:#6F6F6F;
   cursor: pointer;
 }
-
 .showComment{
   color: #929292;
 }
-
 .showComment:hover{
   cursor: pointer;
   color: #000;
 }
-
 /*menu responsive inferior*/
 .menuBottom span{
   font-size: 1.5em;
 }
-
 .menuBottom li:first-child{
   margin-left: 10%;
 }
-
 .menuBottom li{
   margin-left: 3%;
 }
-
 .friends img{
   width: 12%;
 }
-
 /*foto portada*/
 .backgroundImg{
   background-image: url(../img/fondogatos2.jpg);
@@ -300,49 +270,45 @@ body, html {
   background-repeat: no-repeat;
   height: 30em;
 }
-
 .profilePicture img{
   width: 30em;
   border-radius: 50%;
   margin-top: 30%;
   height: 30em;
 }
-
 .description{
   margin-top: 12%;
 }
-
 .publication img{
   width: 100%;
   border-radius: 0.5em;
   margin-bottom: 15%;
 }
-
 .publication img:hover{
   filter: brightness(0.8);
 }
-
 /*media queries*/
 @media (max-width: 767px){
   .post{
     margin-bottom: 10%;
   }
-
   .profilePicture img{
     width: 30vh;
     height: 30vh;
   }
-
   .publication img{
     margin-bottom: 20%;
     border-radius: 0.5em;
   }
-
   .backgroundImg{
     height: 10em;
   }
+  .name{
+  padding: 0;
+  margin-top: 2%;
+  margin-left: 50px;
+  padding-top: 10px;
 }
-
 @media (max-width: 767px){
   .newPost img{
     margin-bottom: 10%;
