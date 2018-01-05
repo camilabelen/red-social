@@ -197,7 +197,7 @@ console.log(error)
 function verificar(){
   var user = firebase.auth().currentUser;
 
-user.sendEmailVerification().then(function() {
+user.sendEmailVerification().then(function () {
   // Email sent.
   alert("Enviando correo de verificación, una vez verificado su correo inicie sesión");
 
@@ -210,8 +210,8 @@ user.sendEmailVerification().then(function() {
 //modal para subir archivos
 
 //Añadir comentarios Comentarios
-  $('.comment').keyup(function(e){
-    if(e.keyCode == 13){
+  $('.comment').keyup(function (e) {
+    if (e.keyCode == 13) {
       var newComment = $(this).val();
       $('<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment">'
         + '<p class="col-lg-10">' + newComment + '</p>'
@@ -219,19 +219,16 @@ user.sendEmailVerification().then(function() {
         + '<span class="col-lg-1 glyphicon glyphicon-trash">' + '</span>'
         +'</div>').insertBefore(this).closest('div');
       $(this).val('');
-      $('.newComment').hide();
     }
   });
-  //ver comentarios
-  $('.allComments p').click(function(){
-    $('.newComment').show();
-  });
+  
   //eliminar comentarios
-  $('.glyphicon-trash').click(function(){
+  $('.glyphicon-trash').click(function () {
     $(this).parent().remove();
   });
+
   //subir imagen
-  $('#imageUpload').change(function(){
+  $('#imageUpload').change(function () {
     readImgUrlAndPreview(this);
     function readImgUrlAndPreview(input){
       if (input.files && input.files[0]) {
@@ -251,12 +248,8 @@ user.sendEmailVerification().then(function() {
     }
   });
 
-   //Borrar imagen
-  $('.deleteImg').click(function(){
-     
-   });
   //Hacer publicación
-  $('.publish').click(function(){
+  $('.publish').click(function () {
     var newPost = $('.addPost').val();
     var img = $('#imagePreview');
     $('.allPost').prepend('<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-sm-offset-1 post">'
@@ -268,11 +261,15 @@ user.sendEmailVerification().then(function() {
                       + '<div class="col-lg-12 col-xs-12">' + '<p>' + '<strong>' + 'Pelusa '
                       + '</strong>' + newPost + '</p>' + '</div>'
                       + '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 allComments">'
-                      + '<p class="showComment">' + '<strong>' + 'Mostrar Comentarios...'
-                      + '</strong>' + '</p>' + '</div>' + '<div class="col-lg-12 col-xs-12">'
-                      + '<div class="form-group">'
+                      + '</div>' + '<div class="col-lg-12 col-xs-12">' + '<div class="form-group">'
                       + '<textarea class="form-control comment" rows="1" placeholder="Escribe un comentario...">'
                       + '</textarea>' + '</div>' + '</div>' + '</div>');
     $('.addPost').val('');
   });
+
+  //dar like
+  $('.like').click(function () {
+    $(this).toggleClass('red');
+  });
+
 });
