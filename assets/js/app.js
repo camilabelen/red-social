@@ -190,7 +190,8 @@ console.log(error)
 })
   $(".pageini").hide();
   $(".inicio").show();
-  $(".navbarcontainer").hide()
+  $(".navbarcontainer").hide();
+  $(".addcontact").hide();
 });
 }
 
