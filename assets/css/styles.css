@@ -119,6 +119,10 @@ body, html {
 .user img{
   width: 12%;
 }
+/**/
+.pageini section{
+  margin-top: 4.5em;
+}
 /*barra lateral contactos*/
 .contacts{
   border: 1px solid #CBCBCB;
@@ -287,30 +291,54 @@ h5{
 .publication img:hover{
   filter: brightness(0.8);
 }
+
+/*seccion agregar amigos*/
+.suggested{
+  margin-top: 5em;
+}
+
 /*media queries*/
 @media (max-width: 767px){
   .post{
     margin-bottom: 10%;
   }
+
+  div .post:last-child{
+    margin-bottom: 5.2em;
+  }
+
   .profilePicture img{
     width: 30vh;
     height: 30vh;
   }
+
   .publication img{
     margin-bottom: 20%;
     border-radius: 0.5em;
   }
+
   .backgroundImg{
     height: 10em;
+    margin-top: 5em;
   }
+
   .name{
   padding: 0;
   margin-top: 2%;
   margin-left: 50px;
   padding-top: 10px;
-}
-@media (max-width: 767px){
+  }
+
   .newPost img{
     margin-bottom: 10%;
   }
+
+  .bottomImg{
+    margin-bottom: 4.5em;
+  }
+
+  .lastImg{
+    margin-bottom: 5.2em;
+  }
 }
+  
