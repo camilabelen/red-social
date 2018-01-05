@@ -10,6 +10,16 @@ $(".unfollowbtn2").hide()
 $(document).ready(function(){
   $(".login").show()
 
+$('.cora1').click(function() {
+  $('.cora1').css('color', "#FA0A42");
+  $(".coraz").toggleClass("glyphicon-heart glyphicon-heart-empty");
+});
+
+$('.cora2').click(function() {
+  $('.cora2').css('color', "#FA0A42");
+  $(".cora2").toggleClass("glyphicon-heart glyphicon-heart-empty");
+});
+
 $(".send").click(function(){
   $('#signupmodal').modal('toggle')
 })
@@ -160,7 +170,7 @@ function aparece(user){
   var user = user;
   var contenido = document.getElementById("contenido");
   if(user.emailVerified){
-alert("Tu correo ha sido verificado")
+alert("Ya estás conectado")
   $(".inicio").hide()
 $(".pageini").show()
 $(".perfilcontainer").hide()
@@ -227,7 +237,7 @@ user.sendEmailVerification().then(function() {
       if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function (e) {
-          $('.uploadImg').append('<img src="" id="imagePreview" alt="" width="5em"/>');                 
+          $('.uploadImg').append('<img src="" id="imagePreview" alt="" width="5em"/>');
           $('#imagePreview').attr('src', e.target.result);
           $('#imagePreview').css('marginTop','1%');
           $('#imagePreview').css('paddingTop','3%');

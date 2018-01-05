@@ -46,6 +46,9 @@ h4{
   border-radius: 0.5em;
   cursor:pointer;
 }
+.glyphicon-heart-empty{
+  color: #FA0A42;
+}
 .profile-img {
   width: 96px;
   height: 96px;
@@ -66,6 +69,9 @@ h4{
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+.icon-icon_cat-01:hover {
+color:gray;
 }
 /*modal fin*/
 body, html {
@@ -198,8 +204,8 @@ body, html {
   border-radius: 0.5em;
 }
 h5{
-  padding-left:15px;
-  padding-top: 8px;
+  padding-left: 9px;
+  margin-top: 2.5em;
 }
 .postAuthor img{
   width: 4em;
@@ -207,16 +213,17 @@ h5{
   border-radius: 50%;
   margin-top: 20%;
   margin-bottom: 20%;
+  margin-left: 5%;
 }
 .postAuthor img:hover{
   cursor: pointer;
 }
 .photoProfile{
   padding: 0;
+  width: 5em;
 }
 .name{
   padding: 0;
-  margin-top: 2%;
 }
 .like{
   font-size: 2.3em;
@@ -305,9 +312,8 @@ h5{
   }
   .name{
   padding: 0;
-  margin-top: 2%;
   margin-left: 50px;
-  padding-top: 10px;
+  padding-top: 1px;
 }
 @media (max-width: 767px){
   .newPost img{
