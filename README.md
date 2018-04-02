@@ -27,4 +27,8 @@ Un ejemplo: a este emprendedor le presentaron un caso de una red social para qu�
 * La definición del diseño
 * Diseño mobile friendly
 * Desplegar el producto en Github Pages
-* Opcional, si se desarrolla un login o se desea almacenar la información en una base de datos, usar [Firebase](https://firebase.google.com/).
+* Opcional, si se desarrolla un login o se desea almacenar la información en una base de datos, usar Firebase.
+
+## Desarrollado para
+[Laboratoria](http://www.laboratoria.la/)
+
