@@ -2,7 +2,7 @@
 
 ¿Aburrido de que sus amigos posteen en las redes fotos de sus gatos? Catbook es la solución, red social exclusiva para gatos. La idea es que el usuario pueda crear un perfil de su gato y manejarlo como si del gato se tratase.
 
-![img](assets/img/catbook.png) 
+![img](https://image.ibb.co/gXQwEn/catbook.png) 
 
 ## SOBRE EL PRODUCTO
 Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, las redes sociales han invadido nuestra vida. Las amamos, odiamos, idolatramos y muchos no podemos vivir sin ellas. Dado este contexto, un emprendedor muy visionario nos ha encargado crear una red social. No nos da mucho detalle sobre qué tipo de red social quiere, él solo nos dice que creemos la que mejor podamos y que luego lo convenzamos de que nuestra red social será la más exitosa.
